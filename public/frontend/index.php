@@ -37,16 +37,15 @@
 </head>
 
 <body class="index-page">
-
-    <?php include('header.php'); ?>
-
+    
+    <?php include 'header.php'; ?>
     <main class="main">
-        <?php include('content.php'); ?>
+        <?php include 'content.php'; ?>
     </main>
+    <?php include 'footer.php'; ?>
 
-    <?php include('footer.php'); ?>
 
-    <!-- Scroll Top -->
+  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
@@ -64,5 +63,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
 </body>
 </html>

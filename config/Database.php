@@ -4,11 +4,17 @@ class Database {
     private $host = "localhost";
     private $user = "root";
     private $pass = "";
-    private $db   = "db_kampus";
-   
+    private $db   = "websabu";
+    
     // Properti untuk koneksi database
     public $conn;
+
     public function __construct() {
+        // Inisialisasi koneksi saat objek dibuat
+        $this->getConnection();
+    }
+
+    public function getConnection() {
         // Membuat koneksi ke database dengan error handling
         try {
             $this->conn = new mysqli(
@@ -17,8 +23,6 @@ class Database {
         } catch (Exception $e) {
             die($e->getMessage());
         }
-    }
-    public function getConnection() {
         return $this->conn;
     }
 }
